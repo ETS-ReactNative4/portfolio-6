@@ -30,6 +30,15 @@ h1 {
   font-weight: 900;
 }
 
+.content-grid {
+  margin: 0 auto;
+  width: calc(100% - 5rem); // mobile
+
+  @include breakpoint-med-up {
+    width: calc(100% - 5rem);
+  }
+}
+
 a {
   text-decoration: none;
 }

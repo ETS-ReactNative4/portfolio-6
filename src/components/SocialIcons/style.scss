@@ -1,0 +1,47 @@
+@import 'breakpoints';
+
+.social-icons {
+  padding: .25rem 0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint-sm-down {
+    font-size: 1.75rem;
+  }
+
+  a {
+    padding: 0 0.6666rem;
+  }
+
+  &.animate-icons {
+    a {
+      display: inline-block;
+      transform: perspective(1px) translateZ(0);
+
+      &:hover,
+      &:focus,
+      &:active {
+        animation-name: icon-wobble;
+        animation-duration: .75s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+      }
+    }
+  }
+
+  @keyframes icon-wobble {
+    25% {
+      transform: translateY(-8px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    75% {
+      transform: translateY(-4px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
