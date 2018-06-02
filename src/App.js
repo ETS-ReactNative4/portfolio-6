@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-import Particles from 'react-particles-js';
 
-class App extends Component{
+import HomePage from '@pages/HomePage';
 
-    render(){
-        return (
-          <div className="home-landing-page">
-            Hello
-          </div>
-        );
-    };
-
+class App extends Component {
+  render() {
+    return (
+      <HomePage />
+    );
+  }
 }
 
 export default App;

@@ -1,0 +1,35 @@
+@import 'breakpoints';
+
+html {
+  font-size: 12px;
+
+  @include breakpoint-sm-up {
+    font-size: 14px;
+  }
+
+  @include breakpoint-med-up {
+    font-size: 16px;
+  }
+
+  @include breakpoint-lg-up {
+    font-size: 18px;
+  }
+
+  @include breakpoint-xxl-up {
+    font-size: 20px;
+  }
+
+} /* --- end html --- */
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+}

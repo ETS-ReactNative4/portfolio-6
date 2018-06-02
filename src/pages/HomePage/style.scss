@@ -1,0 +1,54 @@
+@import 'breakpoints';
+
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: center;
+
+
+  .home-wrapper {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.25rem 1.5rem 1rem;
+
+    @include breakpoint-sm-down {
+      padding: 4.25rem 1.5rem 1rem;
+    }
+
+    .intro-wrapper {
+      display: flex;
+      flex: auto;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      > .intro-name {
+        font-family: 'Dosis', sans-serif;
+        font-size: 4rem;
+        line-height: 4rem;
+        font-weight: 400;
+        padding-bottom: 1rem;
+
+        @include breakpoint-sm-down {
+          font-size: 3rem;
+          line-height: 3.5rem;
+        }
+      }
+
+      > .intro-sub {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.375rem;
+        font-weight: 300;
+        margin: 1.5rem 0;
+
+        @include breakpoint-sm-down {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}
