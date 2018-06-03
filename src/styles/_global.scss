@@ -37,6 +37,14 @@ h1 {
   @include breakpoint-med-up {
     width: calc(100% - 5rem);
   }
+
+  @include breakpoint-lg-up {
+    width: calc(100% - 10rem);
+  }
+
+  @include breakpoint-xl-up {
+    width: calc(100% - 20rem);
+  }
 }
 
 a {

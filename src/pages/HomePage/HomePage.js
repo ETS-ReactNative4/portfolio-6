@@ -2,6 +2,7 @@ import React from 'react';
 
 import Nav from '@components/Nav';
 import SocialIcons from '@components/SocialIcons';
+import ScrollToNext from '@components/ScrollToNext';
 
 import './style.scss';
 
@@ -23,9 +24,7 @@ const HomePage = (props, context) => {
         </div>
 
         <SocialIcons />
-        {/*
-          <div className="scrollToNext">Scroll to next</div>
-          */}
+        <ScrollToNext pageSelector=".about-page" />
 
       </div>
     </div>
