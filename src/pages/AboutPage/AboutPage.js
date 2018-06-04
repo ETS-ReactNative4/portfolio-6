@@ -1,6 +1,5 @@
 import React from 'react';
 import ScrollToNext from '@components/ScrollToNext';
-
 import './style.scss';
 
 const AboutPage = (props, context) => {
@@ -40,7 +39,7 @@ const AboutPage = (props, context) => {
           </div>
         </div>
       </div>
-      <ScrollToNext pageSelector=".portfolio-page"/>
+      <ScrollToNext pageSelector=".projects-page" />"
     </div>
   );
 };

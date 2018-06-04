@@ -1,27 +1,19 @@
 import React, { Component } from 'react';
 import { toElement as scrollToElement } from '@utils/scroll';
+
 import './style.scss';
 
 class Nav extends Component {
-
   constructor(props) {
     super(props);
-    this.handleScroll = this.handleScroll.bind(this);
+    this.setSticky = this.setSticky.bind(this);
     this.state = {
       isSticky: false
     };
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll() {
-    if (window.pageYOffset > this.nav.offsetTop) {
+  setSticky() {
+    if(window.pageYOffset > this.nav.offsetTop) {
       this.setState({
         isSticky: true
       });
@@ -38,11 +30,10 @@ class Nav extends Component {
   }
 
   render() {
+    const stickyClass = this.state.isSticky
+      ? 'sticky' : '';
 
-    const stickyClass = this.state.isSticky ? 'sticky' : '';
-
-
-    return (
+    return(
       <nav
         className={stickyClass}
         ref={(elem) => {
@@ -56,12 +47,12 @@ class Nav extends Component {
           >
             About
           </div>
-          <div
-            className="menu__item"
-            onClick={(e) => this.scrollToPage('.portfolio-page')}
-          >
-            Portfolio
-          </div>
+        <div
+          className="menu__item"
+          onClick={(e) => this.scrollToPage('.projects-page')}
+        >
+          Projects
+        </div>
         </div>
       </nav>
     );

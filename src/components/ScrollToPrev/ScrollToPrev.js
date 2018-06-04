@@ -3,9 +3,9 @@ import { toElement as scrollToElement } from '@utils/scroll';
 
 import './style.scss';
 
-class ScrollToPrevious extends Component {
+class ScrollToPrev extends Component {
 
-  scrollToPrevious() {
+  scrollToPrev() {
     const { pageSelector } = this.props;
     const prevPage = document.querySelector(pageSelector);
     scrollToElement(prevPage);
@@ -14,11 +14,11 @@ class ScrollToPrevious extends Component {
   render() {
     return (
       <div
-        className="scroll-to-previous"
-        onClick={(e) => this.scrollToPrevious()}
+        className="scroll-to-prev"
+        onClick={(e) => this.scrollToPrev()}
       >
         <div className="arrow bounce">
-          <div className="scroll-text">Click Me</div>
+          <div className="scroll-text">Click me</div>
           <button className="fas fa-chevron-up fa-2x"/>
         </div>
       </div>
@@ -26,4 +26,4 @@ class ScrollToPrevious extends Component {
   }
 }
 
-export default ScrollToPrevious;
+export default ScrollToPrev;

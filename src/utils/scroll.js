@@ -2,7 +2,6 @@ const isSmoothScrollSupported = ((document || {}).documentElement || {}).style
   ? 'scrollBehavior' in document.documentElement.style
   : false;
 
-
 export const toTop = () => {
   if (isSmoothScrollSupported) {
     window.scrollTo({
@@ -15,33 +14,18 @@ export const toTop = () => {
   }
 };
 
-export const to = (ycoordinate) => {
+export const toElement = (element) => {
   if (isSmoothScrollSupported) {
-    window.scrollTo({
-      top: ycoordinate,
-      left: 0,
-      behavior: 'smooth'
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
     });
   } else {
-    window.scrollTo(0, ycoordinate);
-  }
-};
-
-export const toElement = (element) => {
-  if (element) {
-    if (isSmoothScrollSupported) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    } else {
-      element.scrollIntoView();
-    }
+    element.scrollIntoView();
   }
 };
 
 export default {
   toTop,
-  to,
   toElement
 }

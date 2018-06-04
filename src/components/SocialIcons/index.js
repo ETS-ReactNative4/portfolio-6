@@ -1,3 +1,1 @@
-import SocialIcons from './SocialIcons';
-
-export default SocialIcons;
+export { default } from './SocialIcons';
