@@ -9,9 +9,14 @@ import './style.scss';
 const HomePage = (props, context) => {
 
   return (
-    <div className="home-page">
-      <div className="home-wrapper">
-        <Nav />
+    <div
+      className="home-page"
+    >
+      <Nav />
+      <div
+        className="home-wrapper"
+      >
+
         <div className="intro-wrapper">
           <div className="intro-name">
             Nick Thanasiu

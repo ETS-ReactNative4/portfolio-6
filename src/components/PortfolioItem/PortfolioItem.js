@@ -19,8 +19,7 @@ const PortfolioItem = (props, context) => {
             <i className="fab fa-react"></i>
           </div>
           <div className="portfolio-item__links">
-            <a href="#">Code</a>
-            <a href="#">Blog</a>
+            <a href="#">View Code</a>
           </div>
         </div>
       );

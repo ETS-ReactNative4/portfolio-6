@@ -7,13 +7,12 @@ import ScrollTop from '@components/ScrollTop';
 class App extends Component {
   render() {
     return (
-      <div className='app-wrapper'>
+      <div>
         <HomePage />
         <AboutPage />
         <ProjectsPage />
         <ScrollTop />
       </div>
-
     );
   }
 }

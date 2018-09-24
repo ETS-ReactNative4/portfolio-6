@@ -9,8 +9,7 @@
     "prebuild": "npm run clean",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "predeploy": "npm run build",
-    "deploy": "aws s3 cp build/ s3://dineshpandiyan.com --recursive"
+    "predeploy": "npm run build"
   },
   "devDependencies": {
     "autoprefixer": "7.1.6",
@@ -98,5 +97,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "dependencies": {
+    "react-particles-js": "^2.2.0"
   }
 }

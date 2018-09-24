@@ -4,13 +4,10 @@ import './style.scss';
 const SocialIcons = (props, context) => {
   return (
     <div className="social-icons animate-icons">
-      <a target="_blank" rel="noopener noreferrer" href="#">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/nickthanasiu">
         <i className="fab fa-github"></i>
       </a>
-      <a target="_blank" rel="noopener noreferrer" href="#">
-        <i className="fab fa-twitter"></i>
-      </a>
-      <a target="_blank" rel="noopener noreferrer" href="#">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicholas-thanasiu/">
         <i className="fab fa-linkedin"></i>
       </a>
       <a target="_blank" rel="noopener noreferrer" href="#">
@@ -19,5 +16,7 @@ const SocialIcons = (props, context) => {
     </div>
   );
 }
+
+
 
 export default SocialIcons;

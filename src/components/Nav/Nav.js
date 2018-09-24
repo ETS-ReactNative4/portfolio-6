@@ -13,7 +13,7 @@ class Nav extends Component {
   }
 
   setSticky() {
-    if(window.pageYOffset > this.nav.offsetTop) {
+    if (window.pageYOffset > this.nav.offsetTop) {
       this.setState({
         isSticky: true
       });
