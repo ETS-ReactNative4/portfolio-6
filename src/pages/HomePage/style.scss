@@ -7,8 +7,12 @@
   flex: 0 1 auto;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(	0, 47, 167, 1);
-  color: #fff;
+  background-color: lightblue;
+  color: '#f6f6f6';
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+
+
 
   .home-wrapper {
     padding: 3rem 1rem 1rem;
@@ -26,10 +30,8 @@
       justify-content: center;
 
       > .intro-name {
-        font-family: 'Josefin Sans', sans-serif;
         font-size: 4rem;
         line-height: 4rem;
-        font-weight: 900;
         padding-bottom: 1rem;
 
         @include breakpoint-sm-down {
@@ -39,7 +41,6 @@
       }
 
       > .intro-sub {
-        font-family: 'Abel', sans-serif;
         font-size: 1.5rem;
         margin: 1.5rem 0;
         font-weight: lighter;

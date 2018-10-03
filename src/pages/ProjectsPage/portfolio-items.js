@@ -2,45 +2,36 @@ import React from 'react';
 
 export default [
   {
-    name: 'neighborhood-map',
+    name: 'Robinhood Lite',
     render: (
       <div className="portfolio-item">
         <div className="portfolio-item__title">
-          Neighborhood Map
+          Doohnibor
         </div>
         <div className="portfolio-item__desc">
-          Final Project for Udacity's Front End Nanodegree. Built using Google Maps
-          and ??Foursquare?? APIs and the KnockoutJS framework.
+          <a style={{color: 'blue'}} href="#">Robinhood</a>-clone app.
+          Front End built with React/Redux
+          Backend build with Node, Express, and MongoDB
         </div>
         <div className="portfolio-item__icons">
           <i className="fab fa-js"></i>
-        <i className="fab fa-html5"></i>
+          <i className="fab fa-react"></i>
         </div>
         <div className="portfolio-item__links">
-          <a href="#">Code</a>
-          <a href="#">View</a>
-        </div>
-      </div>
-    )
-  },
-  {
-    name: 'Birckhead',
-    render: (
-      <div className="portfolio-item">
-        <div className="portfolio-item__title">
-          Birckhead
-        </div>
-        <div className="portfolio-item__desc">
-          Web app built for my neighborhood's association.
-          Residents can set up accounts to keep up with neighborhood news and will be able to make payments.
-        </div>
-        <div className="portfolio-item__icons">
-          <i className="fab fa-js"></i>
-        <i className="fab fa-node"></i>
-        </div>
-        <div className="portfolio-item__links">
-          <a href="#">Code</a>
-          <a href="#">Blog</a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/nickthanasiu/robinhood-clone"
+          >
+            Code
+          </a>
+          <a
+            target="_blank"
+            rel="noopener norefferer"
+            href="https://doohnibor.herokuapp.com"
+          >
+            App
+          </a>
         </div>
       </div>
     )
@@ -60,32 +51,36 @@ export default [
         </div>
         <div className="portfolio-item__links">
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/nickthanasiu/feed-reader-testing">
-            View Code
+            Code
           </a>
         </div>
       </div>
     )
   },
   {
-    name: 'Robinhood Lite',
+    name: 'memory-game',
     render: (
       <div className="portfolio-item">
         <div className="portfolio-item__title">
-          Robinhood Lite
+          Memory Game
         </div>
         <div className="portfolio-item__desc">
-          App I built for a <a style={{color: 'blue'}} href="#">Robinhood</a>-like app.
-          Front End built with React...
+          Memory Game project for Udacity's Front End Nanodgree
         </div>
         <div className="portfolio-item__icons">
           <i className="fab fa-js"></i>
-          <i className="fab fa-react"></i>
+          <i className="fab fa-html5"></i>
         </div>
         <div className="portfolio-item__links">
-          <a href="#">Code</a>
-          <a href="#">Blog</a>
+          <a
+            target="_blank"
+            rel="noopener norefferer"
+            href="https://github.com/nickthanasiu/memory-game"
+          >
+            Code
+          </a>
         </div>
       </div>
     )
-  }
+  },
 ]

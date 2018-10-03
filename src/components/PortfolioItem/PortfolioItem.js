@@ -11,9 +11,11 @@ const PortfolioItem = (props, context) => {
           <div className="portfolio-item__title">
             Fake title
           </div>
+
           <div className="portfolio-item__desc">
             Description goes here Description goes here Description goes here Description goes here
           </div>
+
           <div className="portfolio-item__icons">
             <i className="fab fa-js"></i>
             <i className="fab fa-react"></i>

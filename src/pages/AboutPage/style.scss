@@ -1,8 +1,10 @@
 @import 'breakpoints';
 
 .about-page {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
   background-color: rgba(	0, 131, 167, 1);
-  color: #fff;
+  color: '#f6f6f6';
   min-height: 100vh;
   padding-top: 2rem;
   display: flex;
@@ -15,9 +17,9 @@
   }
 
   h1 {
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 3rem;
     padding: 1rem 0;
+    font-weight: 200;
   }
 
   .content-grid {
@@ -37,8 +39,6 @@
       }
 
       p {
-        font-family: 'Abel', sans-serif;
-        font-weight: 400;
         padding: .5rem 0;
       }
 

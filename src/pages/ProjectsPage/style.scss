@@ -1,9 +1,10 @@
 @import 'breakpoints';
 
 .projects-page {
-  background-color: rgba(167, 120, 0, .875);
-  color: #fff;
-  font-family: 'Abel', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  background-color: rgba(220, 255, 255, .5);
+  color: '#f6f6f6';
   min-height: 100vh;
   padding-top: 2rem;
   display: flex;
@@ -16,9 +17,9 @@
   }
 
   h1 {
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 3rem;
     padding: 1rem 0;
+    font-weight: 200;
   }
 
 

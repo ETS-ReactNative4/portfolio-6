@@ -22,7 +22,7 @@ const HomePage = (props, context) => {
             Nick Thanasiu
           </div>
           <div className="intro-sub">
-            Front End Developer
+            Full Stack Web Developer
           </div>
         </div>
         <SocialIcons />
