@@ -14,10 +14,11 @@ const AboutPage = (props, context) => {
 
             <AboutMe />
 
-            <p className="react-snippet">
-              <p>This site was built with React</p>
-              <i className="fab fa-react"></i>
-            </p>
+            <div className="resume">
+              <a href="https://resume.creddle.io/resume/gtsvve2yo8d">
+                Check out my resume here
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -21,9 +21,16 @@ export default [
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/nickthanasiu/robinhood-clone"
+            href="https://github.com/nickthanasiu/doohnibor-client"
           >
-            Code
+            Front-end Code
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/nickthanasiu/doohibor-server"
+          >
+            API Code
           </a>
           <a
             target="_blank"
@@ -44,7 +51,7 @@ export default [
           Test Feed
         </div>
         <div className="portfolio-item__desc">
-          Jasmine test feed built for Udacity's Front End nanodegree
+          Jasmine test suite built for Udacity's Front End nanodegree
         </div>
         <div className="portfolio-item__icons">
           <i className="fab fa-js"></i>

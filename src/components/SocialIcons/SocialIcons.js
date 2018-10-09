@@ -7,9 +7,6 @@ const SocialIcons = (props, context) => {
       <a target="_blank" rel="noopener noreferrer" href="https://github.com/nickthanasiu">
         <i className="fab fa-github"></i>
       </a>
-      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicholas-thanasiu/">
-        <i className="fab fa-linkedin"></i>
-      </a>
       <a target="_blank" rel="noopener noreferrer" href="#">
         <i className="fab fa-stack-overflow"></i>
       </a>

@@ -20,6 +20,7 @@
     font-size: 3rem;
     padding: 1rem 0;
     font-weight: 200;
+    color: red;
   }
 
   .content-grid {
@@ -31,6 +32,10 @@
     margin-top: 3rem;
 
     .about-content {
+      height: 20rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       font-size: 0.95rem;
       line-height: 1.5rem;
 
@@ -42,16 +47,18 @@
         padding: .5rem 0;
       }
 
-      .react-snippet {
-        text-align: center;
-        padding: 2rem 0;
-        font-size: 1rem;
-        font-weight: 300;
+      .resume {
+        align-self: center;
+        font-weight: 500;
+        color: white;
 
-        .fa-react {
-          font-size: 2rem;
+        &:hover {
+          color: rgba(240, 0, 0, .9);
+          cursor: pointer;
         }
       }
+
+
     }
   }
 }
