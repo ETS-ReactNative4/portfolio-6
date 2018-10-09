@@ -17,8 +17,13 @@ const ProjectsPage = (props, context) => {
         </div>
       </div>
       <p className="react-snippet">
-        <p>This site was built with React</p>
         <i className="fab fa-react"></i>
+        <p>
+          This site was built with React
+        </p>
+        <a href="https://github.com/nickthanasiu/portfolio">
+          View Code here
+        </a>
       </p>
       <ScrollToPrev pageSelector=".about-page"/>
     </div>

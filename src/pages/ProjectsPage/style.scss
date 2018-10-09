@@ -38,6 +38,7 @@
   }
 
   .react-snippet {
+    color: white;
     text-align: center;
     padding: 2rem 0;
     font-size: 1rem;
@@ -45,6 +46,10 @@
 
     .fa-react {
       font-size: 2rem;
+    }
+
+    a {
+      color: red;
     }
   }
 }
