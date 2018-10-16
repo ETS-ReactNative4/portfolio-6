@@ -9,7 +9,14 @@ export default [
           Doohnibor
         </div>
         <div className="portfolio-item__desc">
-          <a style={{color: 'blue'}} href="#">Robinhood</a>-clone app.
+          <a style={{color: 'blue'}}
+             href="https://robinhood.com/"
+             target="_blank"
+             rel="noopener noreferrer"
+          >
+            Robinhood
+          </a>
+          -clone app.
           Front End built with React/Redux
           Backend build with Node, Express, and MongoDB
         </div>
@@ -48,7 +55,7 @@ export default [
     render: (
       <div className="portfolio-item">
         <div className="portfolio-item__title">
-          Test Feed
+          Test Suite
         </div>
         <div className="portfolio-item__desc">
           Jasmine test suite built for Udacity's Front End nanodegree

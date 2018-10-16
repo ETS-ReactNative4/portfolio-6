@@ -6,7 +6,7 @@
   background-color: rgba(0, 47, 167, .9);
   color: '#f6f6f6';
   min-height: 100vh;
-  padding-top: 2rem;
+  padding-top: 1rem;
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
@@ -29,7 +29,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 3rem 0 4rem;
+    margin: 3rem 0 0;
 
     @include breakpoint-sm-down {
       flex-direction: column;
