@@ -1,38 +1,35 @@
 @import 'breakpoints';
 
 .home-page {
-
   min-height: 100vh;
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
-  justify-content: center;
-  background-color: lightblue;
-  color: '#f6f6f6';
-  font-family: 'Poppins', sans-serif;
-  font-weight: 200;
-
-
+  justify-content: flex-start;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 
   .home-wrapper {
-    padding: 3rem 1rem 1rem;
-    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
     @include breakpoint-sm-down {
-      padding: 4rem 1.5rem 1rem;
+      padding: 4rem 1.5rem 4rem;
     }
 
     .intro-wrapper {
       display: flex;
-      flex: auto;
       flex-direction: column;
-      text-align: center;
-      justify-content: center;
+      padding-top: 2rem;
 
       > .intro-name {
-        font-size: 4rem;
+        font-size: 4.5rem;
         line-height: 4rem;
         padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
 
         @include breakpoint-sm-down {
           font-size: 3rem;
@@ -41,14 +38,35 @@
       }
 
       > .intro-sub {
+        font-size: 3.5rem;
+        padding-bottom: 1rem;
+
+        @include breakpoint-sm-down {
+          font-size: 2rem;
+        }
+      }
+
+      > .intro-desc {
         font-size: 1.5rem;
         margin: 1.5rem 0;
         font-weight: lighter;
+        text-align: center;
 
         @include breakpoint-sm-down {
           font-size: 1.25rem;
         }
       }
+    }
+
+    .intro__social {
+      width: 100%;
+      margin: 4rem auto;
+    }
+
+    .intro__button-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
 }

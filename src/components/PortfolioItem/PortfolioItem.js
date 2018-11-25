@@ -8,6 +8,9 @@ const PortfolioItem = (props, context) => {
     } else {
       return (
         <div className="portfolio-item">
+          <div className="portfolio-item__img">
+            Image goes here
+          </div>
           <div className="portfolio-item__title">
             Fake title
           </div>

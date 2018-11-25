@@ -1,0 +1,19 @@
+@import 'breakpoints';
+
+.learn_more {
+
+  .learn_more__btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    font-family: 'VT323', monospace;
+    font-size: 1.125rem;
+    background: #fff;
+
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+}
