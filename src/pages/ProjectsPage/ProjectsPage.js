@@ -1,9 +1,7 @@
 import React from 'react';
-import ScrollToPrev from '@components/ScrollToPrev';
 import PortfolioItem from '@components/PortfolioItem';
 import portfolioItems from './portfolio-items';
-import Icon from 'react-icons-kit';
-import { eye } from 'react-icons-kit/fa/'
+
 
 import './style.scss';
 
@@ -11,8 +9,10 @@ const ProjectsPage = (props, context) => {
   return (
     <div className="projects-page">
       <div className="content-grid">
-        <h1>Projects</h1>
-        <Icon icon={eye} />
+        <h2>
+          My Work
+        </h2>
+
         <div className="projects-wrapper">
           {portfolioItems.map((item) => (
             <PortfolioItem render={item.render}/>
@@ -28,7 +28,6 @@ const ProjectsPage = (props, context) => {
           View Code here
         </a>
       </p>
-      <ScrollToPrev pageSelector=".about-page"/>
     </div>
   );
 };

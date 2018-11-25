@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import HomePage from '@pages/HomePage';
 import AboutPage from '@pages/AboutPage';
 import ProjectsPage from '@pages/ProjectsPage';
-import ScrollTop from '@components/ScrollTop';
+import SkillsPage from '@pages/SkillsPage';
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
       <div>
         <HomePage />
         <ProjectsPage />
-        <ScrollTop />
+        <SkillsPage />
       </div>
     );
   }
