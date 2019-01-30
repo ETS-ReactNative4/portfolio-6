@@ -1,0 +1,25 @@
+@import 'breakpoints';
+
+.see-my-work-button {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  font-size: .875rem;
+  width: 5.6875rem;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    color: #56CBF9;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+}

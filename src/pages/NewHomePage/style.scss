@@ -1,6 +1,6 @@
 @import 'breakpoints';
 
-.home-page {
+.new-home-page {
   min-height: 100vh;
   padding: 0 2.43rem;
 
@@ -9,19 +9,19 @@
   flex-direction: column;
   justify-content: flex-start;
 
-  .home-wrapper {
+  .new-home-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .intro-wrapper {
+    .new-intro-wrapper {
       display: flex;
       flex-direction: column;
       padding-top: 2rem;
 
-      .intro-name {
-        font-family: 'Lora', serif;
-        font-weight: bold;
+      .new-intro-name {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
         font-size: 2.625rem;
         line-height: 3rem;
 
@@ -29,15 +29,14 @@
         flex-direction: column;
       }
 
-      .intro-sub {
+      .new-intro-sub {
         font-family: 'Merriweather', serif;
         font-weight: 400;
         font-size: 1.5rem;
-        margin-top: .875rem;
         margin-bottom: 60px;
       }
 
-      .intro-desc {
+      .new-intro-desc {
         font-family: 'Merriweather Sans', sans-serif;
         font-size: 1rem;
         font-weight: 400;
@@ -45,12 +44,12 @@
       }
     }
 
-    .intro__social {
+    .new-intro__social {
       width: 100%;
       margin: 4rem auto;
     }
 
-    .intro__button-container {
+    .newintro__button-container {
       width: 100%;
       display: flex;
       justify-content: center;

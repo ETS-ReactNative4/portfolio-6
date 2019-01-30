@@ -1,6 +1,6 @@
 .skills_page {
   min-height: 100vh;
-  background-color: lightgrey;
+  background-color: rgb(245, 249, 250);
   font-family: 'Raleway', sans-serif;
   padding: 4rem 1rem 2rem;
 
@@ -13,6 +13,6 @@
   }
 
   &__container {
-    border: 1px solid red;
+    margin-top: 1rem;
   }
 }

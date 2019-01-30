@@ -1,19 +1,18 @@
 import React from 'react';
 import Header from '@components/Header';
 import SocialIcons from '@components/SocialIcons';
-import LearnMoreButton from '@components/LearnMoreButton';
+import SeeMyWorkButton from '@components/SeeMyWorkButton';
 import HighLevel from '../../images/high_level_bridge.jpg';
 
 import './style.scss';
 
-const HomePage = (props, context) => {
+const HomePage = (props) => {
 
   return (
-    <div className="home-page">
+    <section className="home-page">
       <div
         className="home-wrapper"
       >
-
         <div className="intro-wrapper">
           <div className="intro-name">
             <span>
@@ -24,10 +23,10 @@ const HomePage = (props, context) => {
             </span>
           </div>
           <div className="intro-sub">
-            Full_stack web_dev
+            front_end web_developer
           </div>
           <div className="intro-desc">
-            some nice playful yet professional text to make me seem both human and semi-competent
+            Based in Toledo, OH. I write code and sometimes design things. Always with the end user in mind, I value intuitive designs and thoughtful interactions.
           </div>
         </div>
 
@@ -36,10 +35,10 @@ const HomePage = (props, context) => {
         </div>
 
         <div className="intro__button-container">
-          <LearnMoreButton />
+          <SeeMyWorkButton />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

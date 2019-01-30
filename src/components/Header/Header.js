@@ -35,7 +35,7 @@ export default (ChildComponent) => {
       return (
         <div className="composed_component">
           <div className="header">
-            <Icon icon={menu} size={16} onMouseDown={this.handleMouseDown} />
+            <Icon icon={menu} size={16} />
           </div>
           <div className="child_component">
             <Menu

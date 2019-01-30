@@ -1,4 +1,5 @@
 import React from 'react';
+import Skills from '@components/Skills';
 
 import './style.scss';
 
@@ -11,7 +12,7 @@ const SkillsPage = () => (
     </div>
 
     <div className="skills_page__container">
-      
+      <Skills />
     </div>
   </div>
 );
