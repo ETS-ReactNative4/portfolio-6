@@ -3,10 +3,21 @@ import Header from '@components/Header';
 import SocialIcons from '@components/SocialIcons';
 import SeeMyWorkButton from '@components/SeeMyWorkButton';
 
+import BlobYellowish from '../../assets/svg/Blob_yellowish';
+import BlobPinkish from '../../assets/svg/Blob_pinkish';
+
 import './style.scss';
 
 const NewHomePage = () => (
   <section className="new-home-page">
+    <div className="blob_yellowish">
+      <BlobYellowish />
+    </div>
+
+    <div className="blob_pinkish">
+      <BlobPinkish />
+    </div>
+
     <div className="new-home-wrapper">
       <div className="new-intro-wrapper">
         <div className="new-intro-name">
@@ -36,4 +47,4 @@ const NewHomePage = () => (
   </section>
 );
 
-export default Header(NewHomePage);
+export default NewHomePage;
