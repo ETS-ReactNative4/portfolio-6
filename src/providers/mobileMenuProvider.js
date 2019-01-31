@@ -5,6 +5,10 @@ const MobileMenuContext = React.createContext();
 export class MobileMenuProvider extends Component {
   constructor(props) {
     super(props);
+
+    this.openMobileMenu = this.openMobileMenu.bind(this);
+    this.closeMobileMenu = this.closeMobileMenu.bind(this);
+    
     this.state = {
       mobileMenuOpen: false,
       actions: {
@@ -15,11 +19,15 @@ export class MobileMenuProvider extends Component {
   }
 
   openMobileMenu() {
-    console.log('opening menu!');
+    this.setState({
+      mobileMenuOpen: true
+    });
   }
 
   closeMobileMenu() {
-    console.log('closing menu!');
+    this.setState({
+      mobileMenuOpen: false
+    });
   }
 
   render() {

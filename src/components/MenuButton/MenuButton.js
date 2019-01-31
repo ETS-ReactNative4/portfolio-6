@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Icon from 'react-icons-kit';
 import { menu } from 'react-icons-kit/iconic/';
-
 import { MobileMenuConsumer } from '@providers/mobileMenuProvider';
 
 import './style.scss';

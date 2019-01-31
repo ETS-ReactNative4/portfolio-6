@@ -1,0 +1,52 @@
+.mobile-menu {
+
+  background-color: white;
+  z-index: 9999;
+
+  -webkit-transition: transform .5s ease;
+  -moz-transition: transform .5s ease;
+  transition: transform .5s ease;
+
+  &.open {
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    right: 0;
+
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+  }
+
+  &.false {
+    transform: translate3d(100vw, 0, 0);
+    min-height: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .mobile-menu__close-btn {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.675rem;
+  }
+
+  .mobile-menu__nav-list {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100vh;
+    padding-top: 12rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .mobile-menu__nav-link {
+      margin-bottom: 4.43rem;
+
+      &.bottom-link {
+        margin-bottom: 13rem;
+      }
+    }
+  }
+}

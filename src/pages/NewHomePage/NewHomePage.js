@@ -1,7 +1,6 @@
 import React from 'react';
 import Typing from 'react-typing-animation';
 
-import { MobileMenuProvider } from '@providers/mobileMenuProvider';
 import MenuButton from '@components/MenuButton';
 import SocialIcons from '@components/SocialIcons';
 import SeeMyWorkButton from '@components/SeeMyWorkButton';
@@ -14,50 +13,48 @@ import './style.scss';
 
 const NewHomePage = () => (
   <section className="new-home-page">
+    
+    <MenuButton />
 
-    <MobileMenuProvider>
-      <MenuButton />
+    <div className="blob_yellowish">
+      <BlobYellowish />
+    </div>
 
-      <div className="blob_yellowish">
-        <BlobYellowish />
-      </div>
+    <div className="blob_pinkish">
+      <BlobPinkish />
+    </div>
 
-      <div className="blob_pinkish">
-        <BlobPinkish />
-      </div>
+    <div className="blob_blueish">
+      <BlobBlueish />
+    </div>
 
-      <div className="blob_blueish">
-        <BlobBlueish />
-      </div>
-
-      <div className="new-home-wrapper">
-        <div className="new-intro-wrapper">
-          <div className="new-intro-name">
-            <Typing speed={25}>
-              <span>
-                Hi, I'm <br /> Nick Thanasiu
-              </span>
-              <Typing />
-              <div className="new-intro-sub">
-                web_developer
-              </div>
-            </Typing>
-          </div>
-
-          <div className="new-intro-desc">
-            Based in Toledo, OH. I write code and sometimes design things. Always with the end user in mind, I value intuitive designs and thoughtful interactions.
-          </div>
+    <div className="new-home-wrapper">
+      <div className="new-intro-wrapper">
+        <div className="new-intro-name">
+          <Typing speed={25}>
+            <span>
+              Hi, I'm <br /> Nick Thanasiu
+            </span>
+            <Typing />
+            <div className="new-intro-sub">
+              web_developer
+            </div>
+          </Typing>
         </div>
 
-        <div className="new-intro__social">
-          <SocialIcons />
-        </div>
-
-        <div className="new-intro__button-container">
-          <SeeMyWorkButton />
+        <div className="new-intro-desc">
+          Based in Toledo, OH. I write code and sometimes design things. Always with the end user in mind, I value intuitive designs and thoughtful interactions.
         </div>
       </div>
-    </MobileMenuProvider>
+
+      <div className="new-intro__social">
+        <SocialIcons />
+      </div>
+
+      <div className="new-intro__button-container">
+        <SeeMyWorkButton />
+      </div>
+    </div>
   </section>
 );
 

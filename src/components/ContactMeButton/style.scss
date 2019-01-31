@@ -1,0 +1,11 @@
+@import '../../styles/_colors.scss';
+
+.contact-me-btn {
+  background-color: $contact_me_button;
+  color: $white;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 24px;
+  border: none;
+  width: 193px;
+  height: 60px;
+}
