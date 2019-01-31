@@ -94,6 +94,8 @@ module.exports = {
       '@styles': path.resolve(__dirname, '..', 'src', 'styles'),
       '@utils': path.resolve(__dirname, '..', 'src', 'utils'),
       '@images': path.resolve(__dirname, '..', 'src', 'images'),
+      '@assets': path.resolve(__dirname, '..', 'src', 'assets'),
+      '@providers': path.resolve(__dirname, '..', 'src', 'providers'),
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',

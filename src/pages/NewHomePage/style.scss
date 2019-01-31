@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: flex-start;
 
-
+  position: relative;
 
   .blob_yellowish {
     position: absolute;
@@ -20,9 +20,17 @@
   }
 
   .blob_pinkish {
-    margin-top: 300px;
+    margin-top: 12rem;
     position: absolute;
     right: 0;
+
+    z-index: 0;
+  }
+
+  .blob_blueish {
+    margin-top: 36rem;
+    position: absolute;
+    left: 0;
 
     z-index: 0;
   }
@@ -44,6 +52,7 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
         font-size: 2.625rem;
+        height: 153px;
         line-height: 3rem;
 
         display: flex;
@@ -91,8 +100,6 @@
       width: 100%;
       display: flex;
       justify-content: center;
-
-      background-color: transparent;
 
       @include breakpoint-med-up {
         margin-top: -4rem;

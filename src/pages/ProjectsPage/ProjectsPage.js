@@ -5,7 +5,7 @@ import portfolioItems from './portfolio-items';
 
 import './style.scss';
 
-const ProjectsPage = (props, context) => {
+const ProjectsPage = () => {
   return (
     <div className="projects-page">
       <div className="content-grid">

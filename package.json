@@ -105,6 +105,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-icons-kit": "^1.2.1",
     "react-particles-js": "^2.2.0",
-    "react-reveal": "^1.2.2"
+    "react-reveal": "^1.2.2",
+    "react-typing-animation": "^1.6.2"
   }
 }
