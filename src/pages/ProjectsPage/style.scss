@@ -3,13 +3,15 @@
 .projects-page {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
-  
+
   min-height: 100vh;
   padding-top: 1rem;
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
   justify-content: center;
+
+  margin-top: 18rem;
 
   @include breakpoint-sm-down {
     padding-top: 3rem;

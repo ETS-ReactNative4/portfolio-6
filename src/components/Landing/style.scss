@@ -1,6 +1,6 @@
 @import 'breakpoints';
 
-.new-home-page {
+.landing-page {
   min-height: 100vh;
   padding: 0 2.43rem;
 
@@ -11,12 +11,24 @@
 
   position: relative;
 
+  @include breakpoint-med-up {
+    padding: 0 2.75rem;
+  }
+
   .blob_yellowish {
     position: absolute;
     top: 0;
     left: 0;
 
     z-index: 0;
+
+    @include breakpoint-med-up {
+      margin-top: -1rem;
+    }
+
+    @include breakpoint-lg-up {
+      margin-top: -3.5rem;
+    }
   }
 
   .blob_pinkish {
@@ -25,6 +37,15 @@
     right: 0;
 
     z-index: 0;
+
+    @include breakpoint-med-up {
+      margin-top: 14rem;
+    }
+
+    @include breakpoint-lg-up {
+      margin-top: 12rem;
+      margin-right: -3rem;
+    }
   }
 
   .blob_blueish {
@@ -33,9 +54,18 @@
     left: 0;
 
     z-index: 0;
+
+    @include breakpoint-med-up {
+      margin-top: 32rem;
+    }
+
+    @include breakpoint-lg-up {
+      margin-top: 28rem;
+      margin-left: -4rem;
+    }
   }
 
-  .new-home-wrapper {
+  .landing-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,66 +73,90 @@
 
     z-index: 1000;
 
-    .new-intro-wrapper {
+    .intro-wrapper {
       display: flex;
       flex-direction: column;
       padding-top: 2rem;
 
-      .new-intro-name {
+      @include breakpoint-lg-up {
+        padding-top: 0;
+        margin-top: -2rem;
+      }
+
+      .intro-name {
         font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
+        font-weight: 700;
         font-size: 2.625rem;
-        height: 153px;
+        height: 9.5rem;
         line-height: 3rem;
 
         display: flex;
         flex-direction: column;
+
+        @include breakpoint-med-up {
+          font-size: 3rem;
+          height: 10rem;
+          line-height: 3.5rem;
+        }
       }
 
-      .new-intro-sub {
+      .intro-sub {
         font-family: 'Merriweather', serif;
         font-weight: 400;
         font-size: 1.5rem;
         margin-bottom: 3.75rem;
+
+        @include breakpoint-med-up {
+          font-size: 1.675rem;
+          margin-top: -.5rem;
+          margin-bottom: 3rem;
+        }
 
         @include breakpoint-lg-up {
           margin-bottom: 1.75rem;
         }
       }
 
-      .new-intro-desc {
+      .intro-desc {
         font-family: 'Merriweather Sans', sans-serif;
         font-size: 1rem;
         font-weight: 400;
-        //margin: 0 10%;
+        max-width: 85%;
+        margin-top: 2.5rem;
 
         @include breakpoint-med-up {
-          max-width: 90%;
+          max-width: 80%;
+          font-size: 1rem;
+          margin-top: 2rem;
         }
 
         @include breakpoint-lg-up {
           max-width: 60%;
+          margin-top: 1rem;
         }
-
       }
     }
 
-    .new-intro__social {
+    .intro__social {
       width: 100%;
-      margin: 4rem auto;
+      margin: 7rem auto 2rem;
+
+      @include breakpoint-med-up {
+        margin: 3rem auto 2rem;
+      }
 
       @include breakpoint-lg-up {
-        margin-top: 2rem;
+        margin: 1.75rem auto .875rem;
       }
     }
 
-    .new-intro__button-container {
+    .intro__button-container {
       width: 100%;
       display: flex;
       justify-content: center;
 
       @include breakpoint-med-up {
-        margin-top: -4rem;
+        //margin-top: -4rem;
       }
     }
   }

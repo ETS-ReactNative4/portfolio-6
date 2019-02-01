@@ -11,7 +11,7 @@ export default class MenuButton extends Component {
       <MobileMenuConsumer>
         {({ actions }) => (
           <div className="menu-btn" onClick={actions.openMobileMenu}>
-            <Icon icon={menu} size={25} />
+            <Icon icon={menu} size={20} />
           </div>
         )}
       </MobileMenuConsumer>

@@ -5,7 +5,6 @@ import Fade from 'react-reveal/Fade';
 import Icon from 'react-icons-kit';
 import { eye } from 'react-icons-kit/fa/'
 
-
 export default [
   {
     name: 'Doohnibor',

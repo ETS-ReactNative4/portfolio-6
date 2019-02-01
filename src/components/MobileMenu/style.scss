@@ -1,3 +1,6 @@
+@import 'breakpoints';
+@import 'colors';
+
 .mobile-menu {
 
   background-color: white;
@@ -6,13 +9,23 @@
   -webkit-transition: transform .5s ease;
   -moz-transition: transform .5s ease;
   transition: transform .5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40rem;
+  min-height: 100vh;
+
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  @include breakpoint-med-up {
+    height: 20rem;
+  }
 
   &.open {
-    width: 100vw;
-    min-height: 100vh;
-    position: fixed;
-    right: 0;
-
+    width: 100%;
+    //min-height: 100vh;
     transform: translate3d(0vw, 0, 0);
     overflow: hidden;
   }
@@ -25,9 +38,22 @@
   }
 
   .mobile-menu__close-btn {
+    padding: 1rem;
     position: absolute;
-    top: 2.4rem;
-    right: 2.675rem;
+    top: 1rem;
+    right: 1rem;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      color: red;
+    }
   }
 
   .mobile-menu__nav-list {
@@ -43,6 +69,18 @@
 
     .mobile-menu__nav-link {
       margin-bottom: 4.43rem;
+
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      transition: all .3s ease;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        color: $contact_me_button;
+      }
 
       &.bottom-link {
         margin-bottom: 13rem;

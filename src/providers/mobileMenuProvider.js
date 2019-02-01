@@ -8,7 +8,7 @@ export class MobileMenuProvider extends Component {
 
     this.openMobileMenu = this.openMobileMenu.bind(this);
     this.closeMobileMenu = this.closeMobileMenu.bind(this);
-    
+
     this.state = {
       mobileMenuOpen: false,
       actions: {

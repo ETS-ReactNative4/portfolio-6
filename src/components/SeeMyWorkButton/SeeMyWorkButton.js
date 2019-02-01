@@ -12,14 +12,14 @@ export default class LearnMoreButton extends Component {
   }
 
   handleClick() {
-    const myWork = document.querySelector('.projects-page');
+    const myWork = document.querySelector('.my-work');
     scrollToElement(myWork);
   }
 
   render() {
     return (
       <button type="button" className="see-my-work-button" onClick={this.handleClick}>
-        <span className="see-my-work-button">
+        <span className="see-my-work-button__text">
           See my work
         </span>
         <Icon icon={chevronDown} size={28} />

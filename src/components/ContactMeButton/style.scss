@@ -4,8 +4,43 @@
   background-color: $contact_me_button;
   color: $white;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 24px;
   border: none;
-  width: 193px;
-  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-transition: background-color .7 ease-in-out;
+  -moz-transition: background-color .7 ease-in-out;
+  -o-transition: background-color .7 ease-in-out;
+  -ms-transition: background-color .7 ease-in-out;
+  transition: background-color .7 ease-in-out;
+
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+
+  &.small {
+    font-size: .75rem;
+    width: 8rem;
+    height: 2.5rem;
+    padding: .125rem 0;
+  }
+
+  &.normal {
+    font-size: 1.5rem;
+    width: 12rem;
+    height: 4rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($contact_me_button, .9);
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
