@@ -1,8 +1,9 @@
 @import 'breakpoints';
 
 html {
-  font-size: 12px;
+  font-size: 16px;
 
+  /*
   @include breakpoint-sm-up {
     font-size: 14px;
   }
@@ -17,9 +18,14 @@ html {
 
   @include breakpoint-xxl-up {
     font-size: 20px;
-  }
+  }*/
 
 } /* --- end html --- */
+
+html,
+body {
+  overflow-x: hidden;
+}
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: 300;

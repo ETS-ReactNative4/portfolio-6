@@ -2,7 +2,7 @@
 
 .landing-page {
   min-height: 100vh;
-  padding: 0 2.43rem;
+  padding: 0 2.43rem 5rem;
 
   display: flex;
   flex: 0 1 auto;
@@ -12,7 +12,7 @@
   position: relative;
 
   @include breakpoint-med-up {
-    padding: 0 2.75rem;
+    padding: 0 2.75rem 8rem;
   }
 
   .blob_yellowish {
@@ -27,7 +27,7 @@
     }
 
     @include breakpoint-lg-up {
-      margin-top: -3.5rem;
+      margin-top: -6.5rem;
     }
   }
 
@@ -86,9 +86,9 @@
       .intro-name {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 2.625rem;
+        font-size: 2.25rem;
         height: 9.5rem;
-        line-height: 3rem;
+        //line-height: 3rem;
 
         display: flex;
         flex-direction: column;
@@ -121,8 +121,8 @@
         font-family: 'Merriweather Sans', sans-serif;
         font-size: 1rem;
         font-weight: 400;
-        max-width: 85%;
-        margin-top: 2.5rem;
+        //max-width: 85%;
+        margin-top: 1.25rem;
 
         @include breakpoint-med-up {
           max-width: 80%;
@@ -139,7 +139,7 @@
 
     .intro__social {
       width: 100%;
-      margin: 7rem auto 2rem;
+      margin: 4rem auto 2rem;
 
       @include breakpoint-med-up {
         margin: 3rem auto 2rem;
