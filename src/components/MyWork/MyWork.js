@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 
 import { ScreenSizeConsumer } from '@providers/screenSizeProvider';
 
@@ -54,15 +55,17 @@ export default class MyWork extends Component {
               <RectanglePurple screenWidth={screenWidth} breakpoints={breakpoints} />
             </div>
 
-            <div className="my-work__intro">
-              <h2 className="my-work__intro-header">
-                My work
-              </h2>
+            <Fade clear>
+              <div className="my-work__intro">
+                <h2 className="my-work__intro-header">
+                  My work
+                </h2>
 
-              <p className="my-work__intro-paragraph">
-                This is a small collection of projects I’ve worked on over the past few months. Some for clients, some just for my own enrichment. Where appropriate, I’ve included links to code repos for the nerds out there.
-              </p>
-            </div>
+                <p className="my-work__intro-paragraph">
+                  This is a small collection of projects I’ve worked on over the past few months. Some for clients, some just for my own enrichment. Where appropriate, I’ve included links to code repos for the nerds out there.
+                </p>
+              </div>
+            </Fade>
 
             <div className="blob_pinkish_2">
               <BlobPinkish2 screenWidth={screenWidth} breakpoints={breakpoints} />
@@ -75,7 +78,9 @@ export default class MyWork extends Component {
             <div className="my-work__projects">
               {
                 projects.map(project => (
-                  <ProjectCard project={project} />
+                  <Fade clear>
+                    <ProjectCard project={project} />
+                  </Fade>
                 ))
               }
             </div>
