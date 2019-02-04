@@ -60,7 +60,7 @@
     }
 
     @include breakpoint-lg-up {
-      margin-top: 28rem;
+      margin-top: 31rem;
       margin-left: -4rem;
     }
   }
@@ -139,7 +139,8 @@
 
     .intro__social {
       width: 100%;
-      margin: 4rem auto 2rem;
+      //margin: 4rem auto 2rem;
+      margin: 1.5rem 0 2rem;
 
       @include breakpoint-med-up {
         margin: 3rem auto 2rem;
@@ -151,12 +152,24 @@
     }
 
     .intro__button-container {
-      width: 100%;
+      //width: 100%;
       display: flex;
       justify-content: center;
 
+      position: absolute;
+      bottom: 8rem;
+      bottom: 15%;
+      right: .5rem;
+
       @include breakpoint-med-up {
-        //margin-top: -4rem;
+        bottom: 20%;
+      }
+
+      @include breakpoint-lg-up {
+        left: 0;
+        right: 0;
+
+        bottom: 22%;
       }
     }
   }

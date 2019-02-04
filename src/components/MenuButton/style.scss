@@ -3,9 +3,15 @@
   height: 2rem;
   padding: 1rem;
 
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  &.landing {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  &.dropdown {
+    //border: 1px solid blue;
+  }
 
   &:hover {
     cursor: pointer;

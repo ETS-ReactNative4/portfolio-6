@@ -9,7 +9,7 @@ const SocialIcons = () => {
   return (
     <ScreenSizeConsumer>
       {({ screenWidth }) => {
-        const socialIconsize = screenWidth > 825 ? 60 : screenWidth > 615 ? 55 : 45;
+        const socialIconsize = screenWidth > 825 ? 55 : screenWidth > 615 ? 55 : 45;
 
         return (
           <div className="social-icons animate-icons">
