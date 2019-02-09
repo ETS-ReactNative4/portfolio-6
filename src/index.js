@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './libs/fontawesome/fontawesome-all.min';
 
 import { MobileMenuProvider } from '@providers/mobileMenuProvider';
 import { ScreenSizeProvider } from '@providers/screenSizeProvider';

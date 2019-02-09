@@ -1,0 +1,43 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/_breakpoints.scss';
+
+.contact-page {
+  max-width: 600px;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include breakpoint-med-up {
+    margin: 2rem 10%;
+  }
+
+  @include breakpoint-lg-up {
+    margin: 2rem auto;
+  }
+
+  .contact-page__header-container {
+    margin-bottom: 3rem;
+    align-self: flex-start;
+
+    .contact-page__header {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+
+      @include breakpoint-med-up {
+        font-size: 1.5rem;
+      }
+
+      &.purple-bold {
+        color: $purplish;
+      }
+    }
+  }
+
+  .contact-page__contact-form-container {
+    width: 100%;
+
+  }
+}

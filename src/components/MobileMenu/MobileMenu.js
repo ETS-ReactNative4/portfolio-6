@@ -17,7 +17,7 @@ class MobileMenu extends Component {
   }
 
   handleClick(e) {
-    const { mobileMenuOpen, actions, history } = this.props;
+    const { actions, history } = this.props;
 
     // Close mobile menu
     actions.closeMobileMenu();
@@ -31,8 +31,10 @@ class MobileMenu extends Component {
         history.push('/');
         scrollToElement(document.querySelector('.my-work'))
         break;
-      case 'Thoughts':
-        history.push('/blog');
+      //case 'Thoughts':
+        //history.push('/blog');
+        //break;
+      default:
         break;
     }
 
@@ -54,9 +56,9 @@ class MobileMenu extends Component {
           <li className="mobile-menu__nav-link" onClick={this.handleClick}>
             Work
           </li>
-          <li className="mobile-menu__nav-link bottom-link" onClick={this.handleClick}>
+          {/*<li className="mobile-menu__nav-link bottom-link" onClick={this.handleClick}>
             Thoughts
-          </li>
+          </li>*/}
           <li className="mobile-menu__nav-link" onClick={this.handleClick}>
             <ContactMeButton size='normal' />
           </li>

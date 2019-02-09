@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import throttle from 'lodash.throttle';
-import { Link } from 'react-router-dom';
 
 import { ScreenSizeConsumer } from '@providers/screenSizeProvider';
 
@@ -95,10 +94,10 @@ export default (ChildComponent) => {
                       (
                         <span className="dd-nav__right--desktop">
                           <span className="dd-nav__item">
-                            Work
+                            Home
                           </span>
                           <span className="dd-nav__item">
-                            Thoughts
+                            Work
                           </span>
                           {/*<span className="dd-nav__item">
                             More v
