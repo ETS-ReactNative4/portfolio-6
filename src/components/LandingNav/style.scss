@@ -11,7 +11,9 @@
   .landing-nav__list {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: .875rem;
-    width: 22rem;
+    // return to this width once Thoughts link is added back in:
+    // width: 22rem;
+    width: 16rem;
     padding-right: .5rem;
 
     display: flex;

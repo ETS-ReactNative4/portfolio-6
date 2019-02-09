@@ -1,6 +1,28 @@
 @import '../../styles/_breakpoints.scss';
 
 .nav {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: .875rem;
+
   display: flex;
   justify-content: flex-end;
+
+  .nav__right--mobile {
+    @include breakpoint-lg-up {
+      display: none;
+    }
+  }
+
+  .nav__right--desktop {
+    display: none;
+
+    @include breakpoint-lg-up {
+      width: 22rem;
+      height: 4rem;
+      padding-right: .675rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }

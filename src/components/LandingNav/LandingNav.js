@@ -18,11 +18,11 @@ export default class LandingNav extends Component {
           <li className="landing-nav__list-item" onClick={this.handleClick}>
             Work
           </li>
-          <li className="landing-nav__list-item">
+          {/*<li className="landing-nav__list-item">
             <Link to="/blog">
               Thoughts
             </Link>
-          </li>
+          </li>*/}
           <ContactMeButton size='small' />
         </ul>
       </nav>

@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import axios from 'axios';
+
 import ContactForm from './ContactForm';
 
 export default class ContactFormContainer extends Component {
@@ -29,9 +32,23 @@ export default class ContactFormContainer extends Component {
     };
   }
 
-  handleFormSubmit(e) {
-    this.updateButtonText();
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
+  async handleFormSubmit(e) {
+    const { name, email, message } = this.state;
+    const apiUrl = 'http://localhost:1337/sendEmail';
+
+
     e.preventDefault();
+
+    try {
+      await axios.post(apiUrl, { name, email, message });
+      this.updateButtonText();
+    } catch (err) {
+      alert(err);
+    }
   }
 
   handleInput(e) {
